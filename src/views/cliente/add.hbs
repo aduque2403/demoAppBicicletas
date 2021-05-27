@@ -1,0 +1,34 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/reparaciones/cliente/add" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="clientCode" placeholder="Cedula" autofocus>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="clientName" placeholder="Nombre">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="clientEmail" placeholder="Correo" autofocus>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="clientCellPhone" placeholder="Telefono">
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group d-grid gap-2">
+                            <button class="btn btn-success btn-block">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

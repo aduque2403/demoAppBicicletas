@@ -1,0 +1,30 @@
+  
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/inventario/edit/:{{idInv}}" method="POST">
+                        <div class="form-group">
+                            <input type="text" value="{{inventory.invName}}" class="form-control" name="invName" placeholder="Nombre" autofocus>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" value="{{inventory.invModel}}" class="form-control" name="invModel" placeholder="URL">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <textarea name="invDescription" rows="4" class="form-control" placeholder="Sinopsis">{{inventory.invDescription}}</textarea>
+                        </div>
+                        <br>
+                        <div class="form-group d-grid gap-2">
+                            <button class="btn btn-success btn-block">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="container p-8">
+    <br>
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <div class="card card-body">
+                <table id="example" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Cedula</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Telefono</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each clients}}
+                        <tr>
+                            <td>{{ clientCode }}</td>
+                            <td>{{ clientName }}</td>
+                            <td>{{ clientEmail }}</td>
+                            <td>{{ clientCellphone }}</td>
+                            <td><a href="/reparaciones/add/{{idClient}}" data-toggle="modal">Reparación</a></td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Cedula</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Telefono</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

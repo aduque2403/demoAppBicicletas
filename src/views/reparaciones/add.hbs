@@ -1,0 +1,37 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/reparaciones/add/:{{idClient}}" method="POST">
+                        <div class="form-group">
+                            <input type="text" value="{{clients.clientCode}}" class="form-control" name="clientCode" placeholder="Cedula" readonly>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" value="{{clients.clientName}}" class="form-control" name="clientName" placeholder="Nombre" readonly>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" value="{{clients.clientEmail}}" class="form-control" name="clientEmail" placeholder="Correo" readonly>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="repValor" placeholder="Valor" autofocus>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <textarea name="repDescription" rows="4" class="form-control" placeholder="Descripción"></textarea>
+                        </div>
+                        <br>
+                        <div class="form-group d-grid gap-2">
+                            <button class="btn btn-success btn-block">
+                                Asignar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

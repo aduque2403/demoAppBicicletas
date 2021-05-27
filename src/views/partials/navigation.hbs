@@ -1,0 +1,52 @@
+{{#if user}}
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="/reparaciones">Bici Inventario</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        {{#if user}}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-tools"></i>
+            Reparaciones
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/reparaciones">Lista Usuarios</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/reparaciones/cliente/add">Agregar Usuario</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-warehouse"></i>
+            Inventario
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/inventario">Lista</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/inventario/add">Agregar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="/profile" class="nav-link"><i class="fab fa-elementor"></i> Elementos</a>
+        </li>
+        <li class="nav-item">
+          <a href="/profile" class="nav-link"><i class="fas fa-user-circle"></i> Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a href="/logout" class="nav-link">Cerrar Sesión</a>
+        </li>
+        {{else}}
+          <li class="nav-item">
+            <a href="/signin" class="nav-link">Iniciar Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a href="/signup" class="nav-link">Registrarse</a>
+          </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>
+{{/if}}

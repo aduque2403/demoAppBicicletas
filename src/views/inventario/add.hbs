@@ -1,0 +1,29 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/inventario/add" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="invName" placeholder="Nombre" autofocus>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="invModel" placeholder="Modelo">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <textarea name="invDescription" rows="4" class="form-control" placeholder="Descripción"></textarea>
+                        </div>
+                        <br>
+                        <div class="form-group d-grid gap-2">
+                            <button class="btn btn-success btn-block">
+                                Guardar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

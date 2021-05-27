@@ -1,0 +1,47 @@
+:root {
+    --dark: #16191c;
+    --dark-x: #1e2126;
+    --light: #ffffff;
+}
+
+body .bg-dark {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    color: var(--light);
+}
+
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+
+.bg-dark-x {
+    background-color: var(--dark-x);
+}
+
+.form-control,
+.btn {
+    min-height: 2.80rem;
+    line-height: initial;
+}
+
+.logo {
+    width: 15%;
+}
+
+.img-1 {
+    background-image: url('/img/paolo-chiabrando-KSwd2lb3lfs-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2 {
+    background-image: url('/img/patrick-hendry-1ow9zrlldJU-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-3 {
+    background-image: url('/img/rob-wingate-nQYqEwimp5o-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
